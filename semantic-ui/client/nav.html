@@ -1,0 +1,32 @@
+<template name="nav">
+<div class="ui page grid">
+<div class="column">
+  <div class="ui fixed transparent inverted main menu">
+    <div class="header item">Memory Chess</div>
+    <a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
+    <a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Private</a>
+    <div class="right menu">
+      {{> atNavButton}}
+    </div>
+  </div>
+</div>
+</div>
+</template>
+
+<!-- <template name="nav">
+	<div class="following bar light fixed">
+		<div class="ui page grid">
+			<div class="column">
+				<div class="ui right floated secondary menu">
+					{{> atNavButton}}
+				</div>
+				<div class="us large secondary network menu">
+					<div class="header item">Memory Chess</div>
+					<a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
+					<a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Private</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+ -->

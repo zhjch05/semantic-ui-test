@@ -1,0 +1,24 @@
+<template name="home">
+	<link rel="stylesheet" href="chessboardjs/css/chessboard-0.3.0.min.css" />
+    <div class="ui page grid">
+    	<div class="column">
+	    	<!-- start example HTML -->
+			<div id="board" style="width: 400px"></div>
+			<!-- end example HTML -->
+
+			<script src="http://chessboardjs.com/js/json3.min.js"></script>
+			<script src="http://chessboardjs.com/js/jquery-1.10.1.min.js"></script>
+			<script src="chessboardjs/js/chessboard-0.3.0.js"></script>
+			<script>
+					var init = function() {
+
+					//--- start example JS ---
+					var board = new ChessBoard('board','start');
+					//--- end example JS ---
+
+					}; // end init()
+					$(document).ready(init);
+			</script>
+		</div>
+    </div>
+</template>
